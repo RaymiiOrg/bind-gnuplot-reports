@@ -54,3 +54,8 @@ Because GNUplot has no easy support for horizotal bar graphs, if you want it hor
     convert data.png -rotate 90 data-90.png
 
 And thats it, you now have a nice image overview of DNS queries.
+
+## Links
+
+- Raymii.org: https://raymii.org/s/software/Bind-GNUPlot-DNS-Bar-Graph.html
+- Github: https://github.com/RaymiiOrg/bind-gnuplot-reports
