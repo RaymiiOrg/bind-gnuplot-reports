@@ -30,6 +30,11 @@ Enable query logging in Bind:
            };
          };
 
+Remember to create the `/var/log/named/` folder (where in Ubuntu 12.04 Apparmor allows the bind user to write by default):
+
+    mkdir /var/log/named
+    chown bind:bind /var/log/named
+
 ## Bind log parsing
 
 Use the following command line to get the 20 most queries domains  
@@ -57,5 +62,22 @@ And thats it, you now have a nice image overview of DNS queries.
 
 ## Links
 
-- Raymii.org: https://raymii.org/s/software/Bind-GNUPlot-DNS-Bar-Graph.html
-- Github: https://github.com/RaymiiOrg/bind-gnuplot-reports
+- [Raymii.org](https://raymii.org/s/software/Bind-GNUPlot-DNS-Bar-Graph.html)
+- [Github](https://github.com/RaymiiOrg/bind-gnuplot-reports)
+
+## License
+
+    Copyright (C) Remy van Elst 2013
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
